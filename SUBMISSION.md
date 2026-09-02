@@ -33,7 +33,7 @@ The agent handles repetitive classification and bounded queue preparation. The p
 
 ## Testing
 
-Five Node tests pass. A live Chrome/WebMCP exercise registered all four tools, returned an 8-record summary, staged three quarantine records, opened one human-only raw review, and staged four safe CSV rows with `humanConfirmationRequired: true` and `downloaded: false`.
+The live page opens with a 60-second evaluator path that sequences all four WebMCP decisions and maps the observed boundary to the four official judging criteria. Five Node tests pass. A live Chrome/WebMCP exercise registered all four tools, returned an 8-record summary, staged three quarantine records, opened one human-only raw review, and staged four safe CSV rows with `humanConfirmationRequired: true` and `downloaded: false`.
 
 ## Built during the submission period
 

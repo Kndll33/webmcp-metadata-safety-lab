@@ -4,6 +4,8 @@ MetaFence is a security-first WebMCP demonstration for human/agent metadata tria
 
 Live app: https://kndll33.github.io/webmcp-metadata-safety-lab/
 
+The live page opens with a 60-second evaluator path that exercises all four WebMCP boundary decisions in order: safe summary, bounded quarantine staging, human-only raw review, and human-confirmed export.
+
 Narrated 85-second demo: available as the `metafence-webmcp-demo.mp4` asset on the latest GitHub release.
 
 ## Why WebMCP

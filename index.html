@@ -15,6 +15,17 @@
     <p id="webmcp-status" class="status" role="status">Checking WebMCP…</p>
   </header>
   <main>
+    <section aria-labelledby="judge-title" class="judge-path">
+      <p class="eyebrow">Evaluator quick path · about 60 seconds</p>
+      <h2 id="judge-title">Test the WebMCP boundary, not just the interface</h2>
+      <ol>
+        <li>Ask the agent to <code>summarize_metadata_risk</code>. It receives counts and reason codes—not raw descriptions.</li>
+        <li>Ask it to <code>stage_metadata_review</code> with <code>{"risk":"quarantine","maxRecords":3}</code>. Three bounded records appear visibly below.</li>
+        <li>Ask it to <code>request_human_metadata_review</code> for <code>instruction-001</code>. The page opens raw text for the human, while the tool result still withholds it.</li>
+        <li>Ask it to <code>stage_safe_csv_export</code>. The agent can stage four safe rows; only the human can download.</li>
+      </ol>
+      <p class="criteria"><strong>What this proves:</strong> non-trivial WebMCP leverage · complete human/agent execution · a concrete prompt-injection boundary · a least-authority pattern that differs from generic click automation.</p>
+    </section>
     <section aria-labelledby="why-title" class="why">
       <h2 id="why-title">A safer human + agent boundary</h2>
       <div class="flow">
