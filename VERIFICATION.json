@@ -1,0 +1,42 @@
+{
+  "observed_at": "2026-09-01T23:59:00Z",
+  "environment": "Hermes browser Chromium 152 with WebMCP available",
+  "registered_tools": [
+    "summarize_metadata_risk",
+    "stage_metadata_review",
+    "request_human_metadata_review",
+    "stage_safe_csv_export"
+  ],
+  "summary_result": {
+    "total": 8,
+    "clear": 2,
+    "review": 2,
+    "quarantine": 4,
+    "raw_untrusted_metadata_returned": false
+  },
+  "stage_result": {
+    "requested_risk": "quarantine",
+    "requested_max_records": 3,
+    "returned_rows": 3,
+    "user_visible": true,
+    "irreversible_action": false
+  },
+  "human_review_result": {
+    "id": "instruction-001",
+    "opened": true,
+    "raw_text_returned_to_agent": false,
+    "visible_panel_rendered": true
+  },
+  "export_result": {
+    "rows": 4,
+    "human_confirmation_required": true,
+    "downloaded": false,
+    "visible_confirm_button_rendered": true
+  },
+  "focused_tests": {
+    "command": "node --test core.test.mjs && node --check app.mjs && node --check core.mjs",
+    "passed": 5,
+    "failed": 0
+  },
+  "scope": "Focused and live ad-hoc verification, not a claim about Devpost acceptance or judging."
+}

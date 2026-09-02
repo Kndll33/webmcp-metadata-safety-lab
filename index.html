@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MetaFence is a security-first WebMCP metadata triage lab with visible human review and bounded export.">
+  <title>MetaFence — WebMCP Metadata Safety Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">WebMCP Challenge 2026</p>
+    <h1>MetaFence</h1>
+    <p class="lede">Agents can triage metadata without ingesting the raw strings that may try to manipulate them. Humans keep the final review and export controls.</p>
+    <p id="webmcp-status" class="status" role="status">Checking WebMCP…</p>
+  </header>
+  <main>
+    <section aria-labelledby="why-title" class="why">
+      <h2 id="why-title">A safer human + agent boundary</h2>
+      <div class="flow">
+        <span>Untrusted metadata</span><b>→</b><span>Deterministic scanner</span><b>→</b><span>Safe agent tools</span><b>→</b><span>Visible human decision</span>
+      </div>
+      <p>Tool responses include IDs, lengths, risk labels, and reasons—never raw descriptions. An agent can open one record in the page for a human, but cannot approve, rewrite, publish, or silently download anything.</p>
+    </section>
+    <section aria-labelledby="summary-title">
+      <h2 id="summary-title">Risk summary</h2>
+      <div id="stats" class="stats"></div>
+    </section>
+    <section aria-labelledby="queue-title">
+      <div class="section-head">
+        <div><h2 id="queue-title">Human review queue</h2><p>Eight synthetic records demonstrate clear, review, and prompt-injection quarantine paths.</p></div>
+        <label>Risk filter
+          <select id="risk-filter"><option value="all">All</option><option value="quarantine">Quarantine</option><option value="review">Review</option><option value="clear">Clear</option></select>
+        </label>
+      </div>
+      <div class="table-wrap"><table id="records"><thead><tr><th>ID</th><th>Page</th><th>Risk</th><th>Description length</th><th>Reasons</th></tr></thead><tbody></tbody></table></div>
+    </section>
+    <section id="detail" class="detail" hidden aria-live="polite">
+      <h3>Human review</h3>
+      <dl><dt>URL</dt><dd data-field="url"></dd><dt>Title</dt><dd data-field="title"></dd><dt>Raw untrusted description (human-visible only)</dt><dd data-field="description" class="raw"></dd><dt>Scanner reasons</dt><dd data-field="reasons"></dd></dl>
+      <p class="boundary">No approve/publish tool exists. The human decides what happens next.</p>
+    </section>
+    <section aria-labelledby="export-title">
+      <h2 id="export-title">Bounded export</h2>
+      <p>Stage a CSV containing only safe structural fields. Download still requires a human click.</p>
+      <button id="stage-export">Stage safe CSV</button>
+      <div id="export-panel" hidden><strong></strong><button id="download-csv">Human confirm: download CSV</button></div>
+    </section>
+    <section aria-labelledby="events-title"><h2 id="events-title">Visible event log</h2><ul id="event-log" aria-live="polite"></ul></section>
+  </main>
+  <footer><p>Original open-source demonstration. Synthetic records only. No network calls, accounts, secrets, store access, or ranking claims.</p></footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
