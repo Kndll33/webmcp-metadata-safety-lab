@@ -26,6 +26,14 @@ The agent handles repetitive classification and bounded queue preparation. The p
 
 `app.mjs` registers four tools with `document.modelContext.registerTool`. Each tool has a narrow JSON schema, length/enumeration bounds, a visible UI effect where applicable, and a deliberately non-destructive result. `core.mjs` holds deterministic scanning and safe-projection logic. The app progressively degrades to a complete human UI if `document.modelContext` is unavailable.
 
+## Potential impact
+
+The concrete audience is people operating catalogs, CMS content, support systems, and other workflows where agents must triage user-supplied metadata. MetaFence does not claim production deployment; it demonstrates a reusable pattern for reducing unnecessary agent exposure while preserving useful automation and visible human control.
+
+## Creativity and ambition
+
+Most tool demos optimize how much an agent can do. MetaFence explores the opposite design constraint: what is the smallest capability surface that still makes the collaboration useful? Raw-text non-disclosure, structural projection, visible side effects, and the absence of approve/publish/download tools are product behavior rather than warning copy.
+
 ## URLs
 
 - Live app: https://kndll33.github.io/webmcp-metadata-safety-lab/
