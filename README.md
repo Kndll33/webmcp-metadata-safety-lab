@@ -58,6 +58,13 @@ The focused suite verifies quarantine detection, raw-text exclusion from safe pr
 - The 70–160 length range is a review cue, not a fixed Google limit or snippet promise.
 - WebMCP is a progressive enhancement; the visible controls work without it.
 
+## Judging-criteria map
+
+- **WebMCP leverage:** four schema-bounded imperative tools are registered and exercised; agent-visible results intentionally exclude raw untrusted descriptions.
+- **Execution:** polished responsive UI, progressive enhancement, visible event log, human-only review, human-confirmed export, tests, and a reproducible live verification artifact.
+- **Potential impact:** metadata pipelines are a concrete place where agents encounter attacker-controlled text; MetaFence demonstrates a reusable least-authority pattern.
+- **Creativity & ambition:** the app treats WebMCP as a safety boundary rather than merely a faster substitute for clicks.
+
 ## Hackathon provenance
 
 This repository and application were created during the OpenAI WebMCP Challenge submission period, after August 25, 2026. The implementation follows the draft WebMCP API and Chrome developer documentation linked below.
