@@ -1,29 +1,29 @@
-# MetaFence demo script (target 2:20)
+# MetaFence demo script (published cut: 1:20)
 
-## 0:00–0:20 — Problem
+The published cut removes the title-only opening after the organizer’s final evaluator guidance asked entrants to show the project working in the first 10–15 seconds. It begins with the concrete metadata risk and reaches the working classified-record table at 00:11.8.
 
-Show the full queue. Explain that metadata can contain useful content and prompt injection. Generic UI automation may expose the agent to the raw attack text.
+Official guidance: https://webmcp.devpost.com/updates/46161-2-days-left-and-what-judges-actually-look-for
 
-## 0:20–0:40 — Human-first fallback
+## 0:00–0:12 — Risk and boundary
 
-Show the risk counts and manually filter to `Quarantine`. Point out that the app works without an agent and that all records are synthetic.
+Explain that metadata can contain prompt injection, secret requests, or executable markup. State that MetaFence keeps raw content behind a visible human review boundary.
 
-## 0:40–1:05 — Tool discovery
+## 0:12–0:23 — Working human interface
 
-Open the WebMCP-capable browser's agent or console. List the four registered tools. Highlight narrow schemas and the absence of approve, publish, transmit, or direct-download tools.
+Show eight synthetic records already classified as clear, review, or quarantine. The complete ordinary interface works without an agent.
 
-## 1:05–1:30 — Safe agent staging
+## 0:23–0:44 — WebMCP staging
 
-Ask the agent to stage at most three quarantine records. Show the table changing visibly. Inspect the tool result: IDs, lengths, risk, and reasons appear; raw descriptions do not.
+Show four registered tools. Invoke `stage_metadata_review` with a quarantine filter and a maximum of three records. The visible queue changes while the tool result returns IDs, lengths, risk labels, and reason codes, never raw descriptions.
 
-## 1:30–1:55 — Human review boundary
+## 0:44–1:02 — Human-only raw review
 
-Ask the agent to request review of `instruction-001`. Show the raw injected instruction appearing only in the visible human panel. Show the tool response: `rawTextReturnedToAgent: false` and `nextStep: Ask the human to inspect the visible panel.`
+Request review of `instruction-001`. The raw injected instruction appears only in the visible human panel. The tool result says `rawTextReturnedToAgent: false`. There is no approve, rewrite, or publish tool.
 
-## 1:55–2:15 — Confirmed export
+## 1:02–1:16 — Human-confirmed export
 
-Ask the agent to stage a safe quarantine CSV. Show `humanConfirmationRequired: true`, `downloaded: false`, and the explicit human download button. Do not click it until explaining the boundary.
+Stage a safe quarantine CSV. Show four structural rows, `humanConfirmationRequired: true`, `downloaded: false`, and the explicit human download control.
 
-## 2:15–2:20 — Close
+## 1:16–1:20 — Close
 
-“MetaFence uses WebMCP to make the safe path the easy path: agents triage structure, people decide on untrusted content.”
+“MetaFence makes agents useful without making untrusted content authoritative.”

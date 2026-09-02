@@ -1,79 +1,75 @@
 1
-00:00:00,000 --> 00:00:04,800
-This is MetaFence, a security-first WebMCP metadata triage lab.
-
-2
-00:00:04,800 --> 00:00:12,600
+00:00:00,000 --> 00:00:07,800
 Metadata can help agents, but the same strings can contain prompt injection,
 secret requests, or executable markup.
 
-3
-00:00:12,600 --> 00:00:16,520
+2
+00:00:07,800 --> 00:00:11,720
 MetaFence keeps raw content behind a visible human review boundary.
 
-4
-00:00:16,520 --> 00:00:24,200
+3
+00:00:11,720 --> 00:00:19,400
 The app starts with eight original synthetic records.
 A deterministic scanner assigns clear, review, or quarantine states.
 
-5
-00:00:24,200 --> 00:00:27,320
+4
+00:00:19,400 --> 00:00:22,520
 The normal human interface works in any modern browser.
 
-6
-00:00:27,320 --> 00:00:32,920
+5
+00:00:22,520 --> 00:00:28,120
 In a WebMCP browser, four narrowly scoped tools are registered
 as a progressive enhancement.
 
-7
-00:00:32,920 --> 00:00:38,920
+6
+00:00:28,120 --> 00:00:34,120
 Here, the agent invoked stage_metadata_review with a quarantine filter
 and a maximum of three records.
 
-8
-00:00:38,920 --> 00:00:41,200
+7
+00:00:34,120 --> 00:00:36,400
 The page visibly changed to the bounded queue.
 
-9
-00:00:41,200 --> 00:00:49,280
+8
+00:00:36,400 --> 00:00:44,480
 The tool result contained IDs, lengths, risk labels, and reason codes,
 but none of the raw untrusted descriptions.
 
-10
-00:00:49,280 --> 00:00:52,320
+9
+00:00:44,480 --> 00:00:47,520
 Next, the agent requested human review for one record.
 
-11
-00:00:52,320 --> 00:00:56,320
+10
+00:00:47,520 --> 00:00:51,520
 The injected instruction appears only inside this clearly marked,
 visible panel.
 
-12
-00:00:56,320 --> 00:01:03,880
+11
+00:00:51,520 --> 00:00:59,080
 The agent's response says “raw text returned to agent: false”
 and asks the person to inspect the panel.
 
-13
-00:01:03,880 --> 00:01:07,040
+12
+00:00:59,080 --> 00:01:02,240
 There is no approve, rewrite, or publish tool.
 
-14
-00:01:07,040 --> 00:01:12,400
+13
+00:01:02,240 --> 00:01:07,600
 Finally, the agent staged a safe structural CSV.
 The response reports four rows.
 
-15
-00:01:12,400 --> 00:01:15,600
+14
+00:01:07,600 --> 00:01:10,800
 Human confirmation required, and downloaded: false.
 
-16
-00:01:15,600 --> 00:01:18,160
+15
+00:01:10,800 --> 00:01:13,360
 A person must click the final control.
 
-17
-00:01:18,160 --> 00:01:20,920
+16
+00:01:13,360 --> 00:01:16,120
 Every action is recorded in the visible event log.
 
-18
-00:01:20,920 --> 00:01:24,900
+17
+00:01:16,120 --> 00:01:20,100
 MetaFence makes agents useful without making untrusted content authoritative.
