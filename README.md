@@ -6,7 +6,7 @@ Live app: https://kndll33.github.io/webmcp-metadata-safety-lab/
 
 The live page opens with a 60-second evaluator path that exercises all four WebMCP boundary decisions in order: safe summary, bounded quarantine staging, human-only raw review, and human-confirmed export.
 
-Narrated 85-second demo: available as the `metafence-webmcp-demo.mp4` asset on the latest GitHub release.
+Narrated 85-second demo: available as the `metafence-webmcp-demo.mp4` asset on the latest GitHub release. Upload-ready corrected English captions are in [`demo-assets/metafence-webmcp-demo.en.srt`](demo-assets/metafence-webmcp-demo.en.srt).
 
 ## Why WebMCP
 
