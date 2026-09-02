@@ -4,6 +4,8 @@ MetaFence is a security-first WebMCP demonstration for human/agent metadata tria
 
 Live app: https://kndll33.github.io/webmcp-metadata-safety-lab/
 
+Narrated 85-second demo: available as the `metafence-webmcp-demo.mp4` asset on the latest GitHub release.
+
 ## Why WebMCP
 
 Metadata is useful input for agents, but it can also contain prompt injection, secret requests, active markup, and external command URLs. MetaFence registers four explicit browser tools instead of asking an agent to infer controls or ingest every raw string:

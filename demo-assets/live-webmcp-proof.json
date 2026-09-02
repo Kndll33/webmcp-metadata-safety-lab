@@ -1,0 +1,67 @@
+{
+  "tools": [
+    "request_human_metadata_review",
+    "stage_metadata_review",
+    "stage_safe_csv_export",
+    "summarize_metadata_risk"
+  ],
+  "summary": {
+    "total": 8,
+    "clear": 2,
+    "review": 2,
+    "quarantine": 4,
+    "boundary": "Raw metadata is untrusted and omitted from agent-facing results. A human can reveal one record in the visible UI."
+  },
+  "staged": {
+    "staged": [
+      {
+        "id": "instruction-001",
+        "page": "Gift Sets",
+        "url": "https://example.test/collections/gifts",
+        "titleLength": 19,
+        "descriptionLength": 89,
+        "risk": "quarantine",
+        "reasons": [
+          "embedded_instruction",
+          "secret_request"
+        ]
+      },
+      {
+        "id": "secret-001",
+        "page": "Members",
+        "url": "https://example.test/collections/members",
+        "titleLength": 17,
+        "descriptionLength": 91,
+        "risk": "quarantine",
+        "reasons": [
+          "secret_request"
+        ]
+      },
+      {
+        "id": "markup-001",
+        "page": "New Arrivals",
+        "url": "https://example.test/collections/new",
+        "titleLength": 22,
+        "descriptionLength": 69,
+        "risk": "quarantine",
+        "reasons": [
+          "active_markup",
+          "under_70_review_cue"
+        ]
+      }
+    ],
+    "userVisible": true,
+    "irreversibleAction": false
+  },
+  "opened": {
+    "opened": true,
+    "id": "instruction-001",
+    "rawTextReturnedToAgent": false,
+    "nextStep": "Ask the human to inspect the visible panel."
+  },
+  "exported": {
+    "rows": 4,
+    "humanConfirmationRequired": true,
+    "downloaded": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "output": "metafence-webmcp-demo.mp4",
+  "scenes": [
+    {
+      "scene": 1,
+      "image": "01-hero.png",
+      "duration_seconds": 16.892,
+      "narration": "This is MetaFence, a security-first Web M C P metadata triage lab. Metadata can help agents, but the same strings can contain prompt injection, secret requests, or executable markup. MetaFence keeps raw content behind a visible human review boundary."
+    },
+    {
+      "scene": 2,
+      "image": "02-queue.png",
+      "duration_seconds": 16.718,
+      "narration": "The app starts with eight original synthetic records. A deterministic scanner assigns clear, review, or quarantine states. The normal human interface works in any modern browser. In a Web M C P browser, four narrowly scoped tools are registered as a progressive enhancement."
+    },
+    {
+      "scene": 3,
+      "image": "03-agent-staged.png",
+      "duration_seconds": 16.111,
+      "narration": "Here the agent invoked stage metadata review with a quarantine filter and a maximum of three records. The page visibly changed to the bounded queue. The tool result contained IDs, lengths, risk labels, and reason codes, but none of the raw untrusted descriptions."
+    },
+    {
+      "scene": 4,
+      "image": "04-human-review.png",
+      "duration_seconds": 18.735,
+      "narration": "Next, the agent requested human review for one record. The injected instruction appears only inside this clearly marked, human-visible panel. The agent's response says raw text returned to agent: false, and asks the person to inspect the panel. There is no approve, rewrite, or publish tool."
+    },
+    {
+      "scene": 5,
+      "image": "05-confirmed-export.png",
+      "duration_seconds": 18.961,
+      "narration": "Finally, the agent staged a safe structural C S V. The response reports four rows, human confirmation required, and downloaded false. A person must click the final control. Every action is recorded in the visible event log. MetaFence makes agents useful without making untrusted content authoritative."
+    }
+  ],
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "codec_name": "aac"
+      }
+    ],
+    "format": {
+      "duration": "84.963810",
+      "size": "2007889"
+    }
+  }
+}
