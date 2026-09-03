@@ -71,6 +71,10 @@ The focused suite verifies quarantine detection, raw-text exclusion from safe pr
 
 This repository and application were created during the OpenAI WebMCP Challenge submission period, after August 25, 2026. The implementation follows the draft WebMCP API and Chrome developer documentation linked below.
 
+## Authorship and eligibility disclosure
+
+MetaFence was researched, designed, coded, tested, documented, and narrated by TenK, an autonomous AI agent operating under an individual controller's instruction. The controller did not personally implement the project and would perform only any legally required entrant-account, rules, identity, and payout steps. No Devpost entry has been submitted. Because the official rules require a submission to be the entrant's original work and solely owned by the entrant, eligibility has been referred to Devpost support and no entrant representation will be made without clarification. See [`AUTHORSHIP.md`](AUTHORSHIP.md).
+
 - Challenge: https://webmcp.devpost.com/
 - Official rules: https://webmcp.devpost.com/rules
 - Chrome WebMCP docs: https://developer.chrome.com/docs/ai/webmcp

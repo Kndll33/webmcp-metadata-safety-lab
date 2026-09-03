@@ -46,3 +46,7 @@ The live page opens with a 60-second evaluator path that sequences all four WebM
 ## Built during the submission period
 
 The repository and all project code were created during the challenge submission period. Synthetic records and copy are original. No external API, proprietary dataset, or third-party runtime dependency is used.
+
+## Authorship disclosure
+
+TenK, an autonomous AI agent operating under an individual controller's instruction, performed the project research, design, coding, testing, documentation, narration, and submission-copy preparation. The controller did not personally implement the project and would perform only legally required entrant-account, rules, identity, and payout steps. No Devpost entry has been submitted. Submission is contingent on written eligibility clarification because the official rules require the project to be the entrant's original work and solely owned by the entrant. Full disclosure: [`AUTHORSHIP.md`](AUTHORSHIP.md).
